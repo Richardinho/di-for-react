@@ -1,14 +1,12 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
-
 export default class Injector extends Component {
   constructor(props, context) {
     super(props); 
 
     this.parentInjector = context.injector;
     this.services = {};
-
   }
 
   getService(key) {
@@ -37,6 +35,7 @@ export default class Injector extends Component {
           return service;
         }
     }
+
     throw Error(`${key} service does not exist`);
   }
 
@@ -52,6 +51,7 @@ export default class Injector extends Component {
     )
   }
 }
+
 Injector.contextTypes = {
   injector: PropTypes.object,
 }
@@ -64,6 +64,7 @@ Injector.childContextTypes = {
  * decorator that creates higher order component which injects 
  * dependencies into inner component
  */
+
 function Inject(dependencies){
   return (InnerComponent) => {
     if (InnerComponent.prototype instanceof Component) {

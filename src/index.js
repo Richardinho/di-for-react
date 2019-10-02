@@ -29,9 +29,7 @@ const config2 = [
   { key: 'jobService', provider: JobService }
 ];
 const config = [
-  { key: 'barService', provider: BarService }
-
-
+  { key: 'barService', provider: BarService },
 ];
 
 @Inject([])
