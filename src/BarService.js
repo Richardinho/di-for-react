@@ -1,5 +1,5 @@
 export default class BarService {
   constructor() {
-    this.name = 'foobar'
+    this.name = "foobar";
   }
 }

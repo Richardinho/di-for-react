@@ -1,15 +1,13 @@
-import React, { Component } from 'react';
-import Miz from './Miz';
-import PropTypes from 'prop-types';
+import React, { Component } from "react";
+import Miz from "./Miz";
 
 export default class Bar extends Component {
   render() {
     return (
       <div>
-        <Miz/> 
+        <Miz />
         This is bar
       </div>
     );
   }
 }
-
