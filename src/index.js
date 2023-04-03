@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom';
 import React, { Component } from 'react';
 import { Link, Route } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
-import Bar from './bar';
+import Bar from './Bar';
 import Injector, { Inject } from './injector';
 import MyService from './MyService';
 import BarService from './BarService';
